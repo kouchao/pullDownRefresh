@@ -5,7 +5,7 @@ var gulp = require('gulp'),
 // 压缩 js 文件
 gulp.task('default', function() {
 	gulp.src([
-		    "src/js/libs/pullDownRefresh.js",
+		    "demo/js/libs/pullDownRefresh.js",
 		  ])
 		.pipe(uglify())
 		.pipe(gulp.dest('dist/'))
