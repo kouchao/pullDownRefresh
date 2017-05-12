@@ -1,4 +1,12 @@
-define(function() {
+(function(factory) {
+	if (typeof define === 'function' && define.amd) {
+		// AMD. Register as anonymous module.
+		define('pullDownRefresh', [], factory);
+	} else {
+		// Browser globals.
+		factory();
+	}
+})(function() {
 
 	var moveY = 0;
 	var startY = 0;
@@ -76,9 +84,20 @@ define(function() {
 		})
 	}
 
+
+
+	if (typeof window !== 'undefined') {
+		window.pullDownRefresh = {
+			stopPullDownRefresh: stopPullDownRefresh,
+			statrPullDownRefresh: statrPullDownRefresh,
+			initPullDownRefresh: initPullDownRefresh
+		}
+	}
+
 	return {
 		stopPullDownRefresh: stopPullDownRefresh,
 		statrPullDownRefresh: statrPullDownRefresh,
 		initPullDownRefresh: initPullDownRefresh
 	}
-});
+
+})
