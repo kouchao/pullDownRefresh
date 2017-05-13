@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "下拉刷新插件",
   "main": "gulpfile.js",
-   "dependencies": {
+  "dependencies": {
     "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
     "gulp-strip-debug": "^1.1.0",
     "gulp-uglify": "^2.1.2"
   },
