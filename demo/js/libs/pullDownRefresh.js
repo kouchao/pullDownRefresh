@@ -82,6 +82,15 @@
 			}
 
 		})
+
+		pullDownRefresh.addEventListener('touchcancel', function() {
+			if (moveY >= maxHeight) {
+				statrPullDownRefresh(fn);
+			} else {
+				stopPullDownRefresh();
+			}
+
+		})
 	}
 
 
