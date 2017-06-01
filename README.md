@@ -1,12 +1,15 @@
-##下拉刷新
+下拉刷新
+============
 
-###初始化刷新
+初始化刷新
+-----------
 
 ```javascript
 	initPullDownRefresh(option,fn)
 ```
 
-####option
+option
+
 ```javascript
 	{
 		maxHeight:100,//默认高度 支持html
@@ -16,24 +19,26 @@
 	}
 ```
 
-####fn
+fn
 ```javascript
 	function(){
 	}
 ```
 	
-###开始刷新
+开始刷新
+-----------
 ```javascript
 	statrPullDownRefresh(fn)
 ```
 
-####fn
+fn
 ```javascript
 	function(){
 	}
 ```
 	
-###停止刷新
+停止刷新
+-----------
 ```javascript
 	initPullDownRefresh()
 ```
