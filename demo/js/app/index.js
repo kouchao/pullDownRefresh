@@ -1,6 +1,5 @@
 define(['pullDownRefresh'], function($) {
 	$.initPullDownRefresh({},function(){
-		$.stopPullDownRefresh()
-
+		setTimeout($.stopPullDownRefresh,1000)
 	})
 });
