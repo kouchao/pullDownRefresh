@@ -30,6 +30,7 @@
 		scrollTop = 0;
 		pullDownRefresh.style.transition = ' all .5s';
 		pullDownRefresh.style.transform = 'translate(0px,0px)';
+		moveY = 0;
 	}
 
 	function statrPullDownRefresh(fn) {
